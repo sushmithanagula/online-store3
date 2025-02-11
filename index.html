@@ -5,73 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online-Store</title>
     <style>
-     * {
-    margin: 0px;
-  }
-
-  .container {
-    background-color: white;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    background-color: orange;
-  }
-  .footer {
-    display: flex;
-    justify-content: center;
-    background-color: orange;
-    height: 25px;
-  }
-  .row {
-    display: flex;
-    justify-content: center;
-    background-color: silver;
-  }
-  .box {
-    background-color: white;
-    margin: 20px;
-    padding: 10px;
-  }
-  .box2 {
-    display: flex;
-    background-color: white;
-    font-size: 20px;
-    margin: 20px;
-    padding: 10px;
-    width: 1380px;
-  }
-  li {
-    display:inline-block;
-    padding: 10px;
-    font-size: larger;
-  }
-  a{
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  img{
-    width: 500px;
-    height: 400px;
-  }
-     </style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .container {
+        background-color: #f8f1e5;
+        min-height: 100vh;
+        padding-bottom: 20px;
+      }
+      .header, .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, #5e3c1e, #3d2b1f);
+        color: white;
+        padding: 15px 20px;
+      }
+      .footer {
+        justify-content: center;
+      }
+      .header ul {
+        list-style: none;
+        display: flex;
+      }
+      .header li {
+        margin: 0 15px;
+      }
+      .header a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+      .header a:hover {
+        color: #f4a261;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #e2c6a7;
+        padding: 20px;
+      }
+      .box, .box2 {
+        background-color: white;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .box2 {
+        display: flex;
+        align-items: center;
+        width: 80%;
+      }
+      img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+      }
+      button {
+        background-color: #d67d3e;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      button:hover {
+        background-color: #bf5e2e;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <div><h1>Online-Store</h1></div>
-        <div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+        <h1>Online-Store</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-
 
       <div class="row">
         <div class="box">
@@ -99,33 +122,31 @@
 
       <div class="row">
         <div class="box2">
-            <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/201310/india-estates-blend-pack_660_102113073838.jpg" />
-            <div class="box">
-                <h2>India Estates Blend</h2><br>
-                <p>The India Estates Blend is a coffee blend from Starbucks that was launched in 2013 to celebrate the brand's first anniversary in India.The blend is sourced from arabica beans grown on estates in Chickmagalur and Coorg, which are considered the birthplace of coffee in India.</p><br>
-                <h3>Rs 200</h3><br>
-                <button>Add to Cart</button>
-            </div>
+          <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/201310/india-estates-blend-pack_660_102113073838.jpg" />
+          <div class="box">
+            <h2>India Estates Blend</h2>
+            <p>The India Estates Blend is sourced from arabica beans grown on estates in Chickmagalur and Coorg.</p>
+            <h3>Rs 200</h3>
+            <button>Add to Cart</button>
+          </div>
         </div>
       </div>
 
       <div class="row">
         <div class="box2">
-            <div class="box">
-                <h2>Dark Chocolate</h2><br>
-                <p>Dark chocolate is a form of chocolate made of cocoa solids, cocoa butter and sugar. Without added sweetener, dark chocolate is known as bitter chocolate or unsweetened chocolate.</p>
-                <br><h3>Rs 200</h3><br>
-                <button>Add to Cart</button>
-            </div>
-            <img src="https://media.istockphoto.com/id/1400452697/photo/dark-chocolate-bar-with-cocoa-beans.jpg?s=612x612&w=0&k=20&c=jYDFd-C9kMkZVTTqP53d2C3-XV0RXTEdqPFrL22Tmgo=" />
+          <div class="box">
+            <h2>Dark Chocolate</h2>
+            <p>Dark chocolate is made of cocoa solids, cocoa butter, and sugar.</p>
+            <h3>Rs 200</h3>
+            <button>Add to Cart</button>
+          </div>
+          <img src="https://media.istockphoto.com/id/1400452697/photo/dark-chocolate-bar-with-cocoa-beans.jpg?s=612x612&w=0&k=20&c=jYDFd-C9kMkZVTTqP53d2C3-XV0RXTEdqPFrL22Tmgo=" />
         </div>
       </div>
 
       <div class="footer">
         <h3>Copyright. All rights reserved.</h3>
       </div>
-
-
     </div>
   </body>
 </html>
